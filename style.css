@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap");
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+  font-family: "Cantarell", sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 3;
+  border-bottom: black solid 1px;
+}
+nav #home-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #home-link h1 {
+  font-size: 1.5rem;
+}
+nav #home-link #nav-logo {
+  height: 100%;
+}
+nav .menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+nav .menu #hamburger-icon {
+  background-color: white;
+  border: none;
+}
+nav .menu #hamburger-icon .hamburger {
+  width: 25px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+}
+nav .menu ul {
+  border: #000 solid 1px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 80%;
+}
+nav .menu ul li {
+  margin: 10px 0;
+  padding: 0 5px;
+  list-style: none;
+  margin-right: 5px;
+}
+nav .menu ul li:hover {
+  color: #323660;
+}
+nav .menu ul li a {
+  text-decoration: none;
+  color: #323660;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  nav .menu {
+    margin-right: 0;
+  }
+  nav .menu #hamburger-icon {
+    display: none;
+  }
+  nav .menu ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: between;
+    border: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  nav .menu {
+    margin-right: 0;
+  }
+  nav .menu #hamburger-icon {
+    display: none;
+  }
+  nav .menu ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: between;
+    border: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  nav .menu {
+    margin-right: 0;
+  }
+  nav .menu #hamburger-icon {
+    display: none;
+  }
+  nav .menu ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: between;
+    border: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  nav .menu {
+    margin-right: 0;
+  }
+  nav .menu #hamburger-icon {
+    display: none;
+  }
+  nav .menu ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: between;
+    border: none;
+  }
+}
+
+#hero {
+  margin-top: 10vh;
+  height: 90vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+#hero #hero1 {
+  padding: 5%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#hero #hero1 #hero-text {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#hero #hero1 #hero-text h1 {
+  font-size: 1.2rem;
+}
+#hero #hero1 #hero-text h1 span {
+  color: #DF5155;
+}
+#hero #hero1 #hero-text p {
+  font-size: 0.8rem;
+}
+#hero #hero1 #hero-text button {
+  background-color: #FCCE22;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+}
+#hero #hero1 #hero-text button:hover span {
+  color: #323660;
+}
+#hero #hero1 #hero-text button:active {
+  box-shadow: 1px 1px 1px 1px rgba(50, 54, 96, 0.2) inset;
+}
+#hero #hero2 {
+  overflow: hidden;
+  display: none;
+}
+#hero #hero2 #white-cover {
+  background-color: white;
+  z-index: 1;
+  height: 80%;
+  position: absolute;
+  animation: appear 10s linear infinite;
+  top: 0;
+}
+@keyframes appear {
+  30% {
+    transform: translateX(0);
+    width: 49%;
+  }
+  40% {
+    transform: translateX(75%);
+    width: 10%;
+  }
+  45% {
+    transform: translateX(0);
+    width: 0;
+  }
+  90% {
+    transform: translateX(0);
+    width: 0;
+  }
+  100% {
+    transform: translateX(0);
+    width: 0;
+  }
+}
+#hero #hero2 #hero-chart table {
+  color: #DF5155;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+}
+#hero #hero2 #hero-chart table tbody {
+  overflow-x: hidden;
+}
+#hero #hero2 #hero-chart #line-one {
+  z-index: 2;
+}
+#hero #hero2 #hero-chart #line-one tbody tr td {
+  animation: one 10s linear infinite;
+}
+@keyframes one {
+  0% {
+    transform: translateX(100%);
+  }
+  3% {
+    transform: translateX(100%);
+  }
+  8% {
+    transform: translateX(0);
+  }
+}
+#hero #hero2 #hero-chart #line-two {
+  z-index: 2;
+}
+#hero #hero2 #hero-chart #line-two tbody tr td {
+  animation: two 10s linear infinite;
+}
+@keyframes two {
+  0% {
+    transform: translateX(100%);
+  }
+  2% {
+    transform: translateX(100%);
+  }
+  10% {
+    transform: translateX(0);
+  }
+}
+#hero #hero2 #hero-chart #line-three {
+  z-index: 2;
+}
+#hero #hero2 #hero-chart #line-four {
+  z-index: 2;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #hero {
+    display: flex;
+  }
+  #hero #hero1 {
+    display: block;
+    padding: 0;
+    width: 50%;
+  }
+  #hero #hero1 #hero-text {
+    width: 50%;
+  }
+  #hero #hero2 {
+    overflow: hidden;
+    display: block;
+    width: 50%;
+  }
+  #hero #hero2 #white-cover {
+    width: 49%;
+    top: 0;
+  }
+  #hero #hero2 #hero-chart table {
+    width: 48%;
+    top: 25%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #hero {
+    display: flex;
+  }
+  #hero #hero1 {
+    display: block;
+    padding: 0;
+    width: 40%;
+  }
+  #hero #hero1 #hero-text {
+    width: 50%;
+  }
+  #hero #hero2 {
+    display: block;
+    width: 50%;
+  }
+  #hero #hero2 #white-cover {
+    width: 49%;
+    top: 0;
+  }
+  #hero #hero2 #hero-chart table {
+    width: 48%;
+    top: 25%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #hero {
+    display: flex;
+  }
+  #hero #hero1 {
+    display: block;
+    padding: 0;
+    width: 40%;
+  }
+  #hero #hero1 #hero-text {
+    width: 50%;
+  }
+  #hero #hero2 {
+    display: block;
+    width: 50%;
+  }
+  #hero #hero2 #white-cover {
+    width: 49%;
+    top: 0;
+  }
+  #hero #hero2 #hero-chart table {
+    width: 48%;
+    top: 25%;
+  }
+}
+
+#description1 {
+  text-align: center;
+  border: 1px solid #000;
+  padding: 30px 0;
+}
+#description1 h2 {
+  margin: 30px 10px;
+  font-size: 1.2rem;
+}
+#description1 h2 span {
+  color: #DF5155;
+}
+#description1 #description1-content .content-cards {
+  margin: 40px 10px 10px 10px;
+  padding: 5px;
+  border: #323660 solid 1px;
+}
+#description1 #description1-content .content-cards h3 {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 15px 0;
+}
+#description1 #description1-content .content-cards p {
+  border-top: black solid 1px;
+  margin: 5px 0 10px 0;
+  padding: 10px 0;
+}
+#description1 #book-anim {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 20px 0;
+}
+#description1 #book-anim table {
+  width: 50%;
+  border-collapse: collapse;
+}
+#description1 #book-anim table th {
+  border: 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 10px;
+  height: 25px;
+}
+#description1 #book-anim table th #account-title {
+  color: #dbac00;
+}
+#description1 #book-anim table td {
+  border: 1px solid;
+  width: 50%;
+}
+#description1 #book-anim table #debit {
+  visibility: hidden;
+}
+#description1 #book-anim table #debit span {
+  color: #DF5155;
+}
+#description1 #book-anim table #credit span {
+  color: #dbac00;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #description1 #description1-content {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #description1 {
+    margin: 0 10%;
+    border-left: none;
+    border-right: none;
+  }
+  #description1 #description1-content {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #description1 {
+    margin: 0 15%;
+    border-left: none;
+    border-right: none;
+  }
+  #description1 #description1-content {
+    display: flex;
+  }
+}
+
+#description2 {
+  padding: 30px 0;
+  text-align: center;
+}
+#description2 h2 {
+  margin: 30px 10px;
+  font-size: 1.2rem;
+}
+#description2 #description2-content {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+}
+#description2 #description2-content .courses {
+  font-size: 1.1rem;
+  background-color: white;
+  margin: 30px 10px 10px 10px;
+  padding: 5px;
+  border: #323660 solid 1px;
+}
+#description2 #description2-content .courses span {
+  pointer-events: none;
+}
+#description2 #description2-content .courses:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#description2 #description2-content .courses:hover span {
+  color: #323660;
+}
+#description2 #description2-content .courses:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#description2 #description2-content .courses .course {
+  pointer-events: none;
+  margin: 10px 0;
+  display: none;
+}
+#description2 #description2-content .courses .course ul li {
+  line-height: 0;
+  font-size: 0.9em;
+  list-style: none;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #description2 #description2-content {
+    display: grid;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #description2 {
+    margin: 0 10%;
+  }
+  #description2 #description2-content {
+    display: grid;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #description2 {
+    margin: 0 15%;
+  }
+  #description2 #description2-content {
+    display: grid;
+  }
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+footer .footer-div {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+footer ul {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+footer ul li {
+  padding: 2px;
+  text-align: center;
+  font-size: 1.1rem;
+  list-style: none;
+  display: inline-block;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer ul li a:hover {
+  color: #323660;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    flex-direction: row;
+  }
+  footer .footer-div {
+    font-size: 1.2rem;
+  }
+  footer ul li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  footer {
+    margin: 0 10%;
+    flex-direction: row;
+  }
+  footer .footer-div {
+    font-size: 1.2rem;
+  }
+  footer ul li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1201px) {
+  footer {
+    margin: 0 15%;
+    flex-direction: row;
+  }
+  footer .footer-div {
+    font-size: 1.2rem;
+  }
+  footer ul li {
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

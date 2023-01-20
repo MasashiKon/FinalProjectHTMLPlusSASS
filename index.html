@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="bookkeeping, account, finance">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <script src="https://kit.fontawesome.com/b4b4f89259.js" crossorigin="anonymous"></script>
+    <title>Keepers.org</title>
+</head>
+<body>
+
+    <nav>
+        <div id="home-link">
+            <img id="nav-logo" src="./image/logo-color.png" alt="logo">
+            <h1 id="title">
+                Keepers.org
+            </h1>
+        </div>
+
+        <div class="menu">
+            <button id="hamburger-icon" onclick="menuClick()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </button>
+            <ul id="menuList">
+                <li><a href="#index">My page</a></li>
+                <li><a href="#about">Catalog</a></li>
+                <li><a href="#contact">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div id="hero1" class="hero-image">
+            <div id="hero-text">
+              <h1>Keep You <span>Enthusiastic</span></h1>
+              <p>10+ thousand people are learning on Keepers.org.</p>
+              <button><span>Get started</span></button>
+            </div>
+        </div>
+        <div id="hero2">
+            <div id="white-cover"></div>
+            <div id="hero-chart">
+                <table class="charts-css line" id="line-one">
+                    <tbody>
+                    <tr>
+                        <td style="--start: 0.5; --size: 0.9"> <span class="data"></span> </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="charts-css line" id="line-two">
+                    <tbody>
+                    <tr>
+                        <td style="--start: 0.5; --size: 0.1"> <span class="data"></span> </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="charts-css line" id="line-three">
+                    <tbody>
+                    <tr>
+                        <td style="--start: 0.0; --size: 0.0"> <span class="data"></span> </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="charts-css line" id="line-four">
+                    <tbody>
+                    <tr>
+                        <td style="--start: 0.5; --size: 0.5"> <span class="data"></span> </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="charts-css area" id="area-one">
+
+                    <tbody>
+                      <tr>
+                        <td style="--start: 0.5; --size: 0.1"><span class="data"></span> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="description1">
+        <h2>Learn <span>key basics</span> for bookkeeping</h2>
+        <div id="description1-content">
+            <div class="content-cards">
+                <h3>Almost account titles</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum magnam, eaque quibusdam sapiente?</p>
+            </div>
+
+            <div class="content-cards">
+                <h3>What is the limited company exactry are?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima assumenda, dolores mollitia culpa nisi adipisci!</p>
+            </div>
+
+            <div class="content-cards">
+                <h3>How you can save money for your family?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dolore sint debitis quo consequuntur quae?</p>
+            </div>
+        </div>
+        <div id="book-anim">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <span id="account-title">Cash_</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="debit">
+                            <span id="debit-span"></span>
+                        </td>
+                        <td id="credit">
+                            <span id="credit-span">150</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="description2">
+        <h2>Lessons</h2>
+        <div id="description2-content">
+            <button class="courses" onclick="courseClick(event)"><span><i class="fa-solid fa-book-open"></i>Debit and Credits</span>
+                <div id="course1" class="course">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+            </button>
+            <button class="courses" onclick="courseClick(event)"><span><i class="fa-solid fa-coins"></i>Asset</span>
+                <div id="course2" class="course">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+            </button>
+            <button class="courses" onclick="courseClick(event)"><span><i class="fa-solid fa-handshake"></i>Transactions</span>
+                <div id="course3" class="course">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+            </button>
+            <button class="courses" onclick="courseClick(event)"><span><i class="fa-solid fa-scale-balanced"></i>Balance sheet</span>
+                <div id="course4" class="course">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+            </button>
+            <button class="courses" onclick="courseClick(event)"><span><i class="fa-solid fa-money-bills"></i>Cash flow statement</span>
+                <div id="course5" class="course">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <span>|</span>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+            </button>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div id="about-us" class="footer-div">
+            <div>About us</div>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Authors</a></li>
+                <li><a href="#">Press</a></li>
+            </ul>
+        </div>
+        <div id="Product" class="footer-div">
+            <div>Product</div>
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Articles</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        let accountTitle = document.getElementById("account-title");
+        let debit = document.getElementById("debit-span");
+        let credit = document.getElementById("credit-span");
+
+        const titleArr = [
+            "Cash",
+            "Petty Cash",
+            "Marketable Securities",
+            "Accounts Receivable",
+            "Prepaid Expenses",
+            "Inventory",
+            "Fixed Assets",
+            "Accounts Payable",
+            "Accrued Liabilities",
+            "Taxes Payable",
+            "Wages Payable",
+            "Notes Payable",
+            "Common Stock",
+            "Preferred Stock",
+            "Retained Earnings",
+            "Revenue",
+            "Cost of Goods Sold",
+            "Advertising Expense",
+            "Bank Fees",
+            "Depreciation Expense",
+            "Payroll Tax Expense",
+            "Rent Expense",
+            "Supplies Expense",
+            "Utilities Expense",
+            "Wages Expense"
+        ];
+
+        const colorArr = ["#DF5155", "#dbac00"];
+
+        setInterval(() => {
+            credit.style.visibility = "hidden";
+            debit.style.visibility = "hidden";
+            credit.innerHTML = 0;
+            debit.innerHTML = 0;
+            const index = Math.floor(Math.random() * titleArr.length);
+            const debitOrCredit = Math.floor(Math.random() * 2);
+            const value = String(Math.floor(Math.random() * 100) * 10);
+            const title = titleArr[index];
+            let titleVal = "";
+            let titleLength = 0;
+            let valueVal = "";
+            let valueLength = 0;
+            accountTitle.style.color = colorArr[debitOrCredit];
+            accountTitle.innerHTML = " ";
+
+            const titleAnim = setInterval(() => {
+                titleVal = title.slice(0, titleLength++) + "_";
+                accountTitle.innerHTML = titleVal;
+                if(titleLength > title.length) {
+                    clearInterval(titleAnim);
+                    let valueAnim;
+                    if(debitOrCredit) {
+                        debit.innerHTML = "";
+                        valueAnim = setInterval(() => {
+                            debit.style.visibility = "visible";
+                            valueVal = value.slice(0, valueLength++);
+                            debit.innerHTML = valueVal;
+                            if(valueLength > value.length) clearInterval(valueAnim);
+                        }, 200);
+                    } else {
+                        credit.innerHTML = "";
+                        valueAnim = setInterval(() => {
+                            credit.style.visibility = "visible";
+                            valueVal = value.slice(0, valueLength++);
+                            credit.innerHTML = valueVal;
+                            if(valueLength > value.length) clearInterval(valueAnim);
+                        }, 200); 
+                    }
+                };
+            }, 100);
+
+
+        }, 5000);
+
+        const menuClick = () => {
+            const menu = document.getElementById("menuList");
+            if(menu.style.display !== "flex") {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+
+        const courseClick = (event) => {
+            const courseMenu = event.target.children[1];
+            if(courseMenu.style.display !== "block") {
+                courseMenu.style.display = "block";
+                let counter = 0;
+                const heightAnim = setInterval(() => {
+                    courseMenu.children[0].children[counter++].style.lineHeight = "10px"
+                    if(counter >= courseMenu.children[0].children.length) {
+                        counter = 0;
+                        clearInterval(heightAnim);
+                    }
+                }, 10);
+            } else {
+                let counter = 0;
+                const heightAnim = setInterval(() => {
+                    courseMenu.children[0].children[counter++].style.lineHeight = "0"
+                    if(counter >= courseMenu.children[0].children.length) {
+                        counter = 0;
+                        courseMenu.style.display = "none";
+                        clearInterval(heightAnim);
+                    }
+                }, 10);
+            }
+
+        }
+    </script>
+</body>
+</html>

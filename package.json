@@ -1,0 +1,17 @@
+{
+  "name": "finalprojecthtmlplussass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass main.scss style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "charts.css": "^0.9.0",
+    "sass": "^1.57.1"
+  }
+}
